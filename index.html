@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main class="encriptadorMain">
+        <div class="encriptadorInicio">
+            <textarea class="campoTexto" id="campoTexto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="botonesEncriptar">
+                <a class="encriptar" onclick="encriptarTexto()">Encriptar</a>
+                <a class="desencriptar" onclick="desencriptarTexto()">Desencriptar</a>
+            </div>
+        </div>
+        <div class="encriptadorTexto">
+            <img class="vacio" id="vacio" src="./img/vacio.png" alt="">
+            <textarea class="areaTexto" name="" id="areaTexto" disabled></textarea>
+            <a class="copiar" id="copiar" onclick="copiar()" onmouseleave="estado()">Copiar Texto</a>
+        </div>
+    </main>
+    <footer class="footer">Desarrollado por Pablo Mora</footer>
+    <script src="script.js"></script>
+</body>
+</html>
