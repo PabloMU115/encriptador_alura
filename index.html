@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador de texto</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <main class="encriptadorMain">
-        <div class="encriptadorInicio">
-            <textarea class="campoTexto" id="campoTexto" placeholder="Ingrese el texto aqui"></textarea>
-            <div class="botonesEncriptar">
-                <a class="encriptar" onclick="encriptarTexto()">Encriptar</a>
-                <a class="desencriptar" onclick="desencriptarTexto()">Desencriptar</a>
+    <header class="header">
+        <nav class="header_menu">
+            <a class="headerMenu" href="index.html">Inicio</a>
+            <a class="headerMenu" href="about.html">Sobre mi</a>
+        </nav>
+    </header>
+    <main class="presentacion">
+        <section class="presentacion_contenido">
+            <h1 class="presentacion__contenido_titulo">
+                Eleva tu negocio al siguiente nivel 
+                <strong>con un Front-end de calidad</strong>
+            </h1>
+            <p class="presentacion_texto">
+                Hola <strong class="titulo_destaque">soy Pablo Mora Ureña</strong>,
+                desarrollador web
+            </p>
+            <div class="presentacion_enlaces">
+                <h2 class="subtitulo">Accede a mis redes sociales:</h2>
+                <a class="link" href="https://www.linkedin.com/in/pablo-mora-ure%C3%B1a-969bb5251/">
+                <img src="./imagenes/linkedin.png" alt="linkedin">
+                Linkedin
+                </a>
+                <a class="link" href="https://github.com/PabloMU115">
+                <img src="./imagenes/github.png" alt="github">
+                Git-hub
+                </a>
             </div>
-        </div>
-        <div class="encriptadorTexto">
-            <img class="vacio" id="vacio" src="./img/vacio.png" alt="">
-            <textarea class="areaTexto" name="" id="areaTexto" disabled></textarea>
-            <a class="copiar" id="copiar" onclick="copiar()" onmouseleave="estado()">Copiar Texto</a>
-        </div>
+        </section>
+        <img src="./imagenes/io.png" class="imagen" alt="imagen mia">
     </main>
-    <footer class="footer">Desarrollado por Pablo Mora</footer>
-    <script src="script.js"></script>
+    <footer class="footer">
+        <p>Desarrollado por Pablo Mora 2024</p>
+    </footer>
 </body>
 </html>
